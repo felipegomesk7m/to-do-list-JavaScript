@@ -1,8 +1,7 @@
 const addBtn = document.getElementById('add-btn');
-const task = document.getElementById('task');
+const taskClass = document.getElementById('task-class');
 
 addBtn.addEventListener('click', () => {
     let textArea = document.getElementById('text');
-    task.innerHTML = `<input type="checkbox"> ${textArea.value}`
-    
+    taskClass.innerHTML += `\n <input type="checkbox"> ${textArea.value}`
 })

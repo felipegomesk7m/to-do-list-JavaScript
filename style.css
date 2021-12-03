@@ -24,13 +24,14 @@ body {
     line-height: 60px;
 }
 
+#task-class {
+    line-height: auto;
+    display: block;
+}
+
 input, button {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
-}
-
-#text {
-
 }
 
 footer {
