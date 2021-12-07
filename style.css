@@ -50,7 +50,7 @@ body {
     height: 100%;
     border: none;
     outline: none;
-    background-color: #d87093;
+    background-color: #8e94f2;
     color: #fff;
     font-size: 22px;
     cursor: pointer;
@@ -59,10 +59,11 @@ body {
 }
 
 .container .todoList {
-    
+    max-height: 250px;
+    overflow-y: auto;
 }
 
-.todoList .li {
+.todoList li {
     list-style: none;
     height: 45px;
     line-height: 45px;
@@ -71,17 +72,24 @@ body {
     margin-bottom: 8px;
     padding: 0 15px;
     cursor: default;
+    position: relative;
+    overflow: hidden;
 }
 
 .todoList li span {
     position: absolute;
-    right: 0px;
-    position: relative;
+    right: -45px;
     width: 45px;
     text-align: center;
     border-radius: 0 3px 3px 0;
-    color: #FE5049;
-    
+    background: #FE5049;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.todoList li:hover span {
+    right: 0;
 }
 
 .container .footer {
@@ -95,7 +103,7 @@ body {
 .footer button {
     outline: none;
     border: none;
-    background: #d87093;
+    background: #FE5049;
     color: #fff;
     border-radius: 3px;
     padding: 6px 10px;
