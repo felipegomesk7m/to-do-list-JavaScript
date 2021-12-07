@@ -1,13 +1,12 @@
-const addBtn = document.getElementById('add-btn');
-const taskClass = document.getElementById('task-class');
+const inputBox = document.querySelector(".inputField input");
+const addBtn = document.querySelector(".inputField button");
 
-addBtn.addEventListener('click', () => {
-    let textArea = document.getElementById('text');
-    if (textArea.value === "") {
-        console.log('Você adicionou um campo em vazio')
+inputBox.onkeyup = () => {
+    let userData = inputBox.value;
+    if (userData.trim() != 0) {
+        addBtn.classList.add("active");
     } else {
-        taskClass.innerHTML += `\n <input type="checkbox"> <label>${textArea.value}</label>`
-        textArea.value = "";
+        addBtn.classList.remove("active");
     }
-    
-})
+}
+

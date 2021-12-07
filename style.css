@@ -56,6 +56,13 @@ body {
     cursor: pointer;
     border-radius: 3px;
     margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .container .todoList {
