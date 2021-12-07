@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="/to-do-list-JavaScript/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main>
-        <div class="container">
-            <h1>📋 To-do list</h1>
-            <input type="text" id="text" placeholder="Digite uma tarefa..."> <button id="add-btn">Adicionar</button>
-            <div class="tasks">
-                <p id="task-class">
-
-                </p>
-            </div>
+    <div class="container">
+        <header>📋 To-do App</header>
+        <div class="inputField">
+            <input type="text" placeholder="Adicionar tarefa...">
+            <button><i class="fas fa-plus"></i></button>
         </div>
-    </main>
+        <ul class="todoList">
+            <li>Aprender HTML5</li>
+            <li>Aprender CSS3</li>
+            <li>Apredner JavaScript</li>
+            <li>Aprender React</li>
+        </ul>
+        <div class="footer">
+            <span>Você tem <span class="pendingTasks"></span> tarefas pendentes.</span>
+            <button>Remover tudo</button>
+        </div>
+    </div>
     <footer>
-        <p>Desenvolvedor: <a href="https://github.com/felipegomesk7m"> Github | Felipe Gomes </a> @ 2021</p>
+        <p>Desenvolvedor: <a href="https://github.com/felipegomesk7m"><i class="fab fa-github"></i> Felipe Gomes </a></p>
         
     </footer>
 </body>
